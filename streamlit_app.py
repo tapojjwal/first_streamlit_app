@@ -30,7 +30,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 #New section to be added here - 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 #streamlit.text(fruityvice_response.json())
 
 # Representing JSON in flat tabular format 
