@@ -27,7 +27,7 @@ streamlit.header('Fruityvice fruit advice!')
 
 #New section to be added here - 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response.json())
 
 # Representing JSON in flat tabular format 
