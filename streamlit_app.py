@@ -28,7 +28,7 @@ streamlit.header('Fruityvice fruit advice!')
 #New section to be added here - 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
-streamlit.text(fruityvice_response.json())
+#streamlit.text(fruityvice_response.json())
 
 # Representing JSON in flat tabular format 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
